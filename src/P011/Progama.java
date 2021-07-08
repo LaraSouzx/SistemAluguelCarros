@@ -1,7 +1,5 @@
 package P011;
-
 import java.util.Scanner;
-
 public class Progama {
 	public static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in);
@@ -18,18 +16,32 @@ public class Progama {
 			
 			System.out.println("###############################");
 			System.out.println("Agora nos informe as seguintes dados sobre o veículo:");
-			System.out.println("Modelo do carro:"); //o print do modelo do carro
+			System.out.println("Modelo do carro:");
 			    sc.nextLine();
-			String modCarro = sc.nextLine();        // e da placa saem juntos
-			System.out.println("Placa do carro:");  // e so recebe um valorkoij0ik
+			String modCarro = sc.nextLine();       
+			System.out.println("Placa do carro:"); 
 			String placa = sc.nextLine();
 			System.out.println("Quantos quilometros foram rodados?");
 			float KmR = sc.nextFloat();
+			System.out.println("Por quantos dias o veículo foi alugado?");
+			int DiAlugados = sc.nextInt();
 			
-			al01.carros(modCarro, placa, KmR);
-			//teste
+			al01.carros(modCarro, placa, KmR, DiAlugados);
 			
+			System.out.println(al01);
 			
-	}
+			double totalKmR = KmR * 4.5;
+			int totaldiaria = DiAlugados * 4;
+			double geral = totalKmR + DiAlugados;
+			System.out.println("---------------------------------");
+			System.out.println("Pela quantidade de dias que o veículo foi alugado, terá de ser pago: R$" +totalKmR);
+			System.out.println("Pelo total de quilometros percorridos, terão de ser pagos: R$" +totaldiaria);
+			System.out.println("No total o valor a ser pago é: R$" +geral);
+        }
+
+	@Override
+	public String toString() {
+		return "Progama []";
+	 }
 
 }
