@@ -31,7 +31,7 @@ public class Progama {
 			System.out.println(al01);
 			
 			double totalKmR = KmR * 4.5;
-			int totaldiaria = DiAlugados * 4;
+			int totaldiaria = DiAlugados * 3;
 			double geral = totalKmR + DiAlugados;
 			System.out.println("---------------------------------");
 			System.out.println("Pela quantidade de dias que o veículo foi alugado, terá de ser pago: R$" +totalKmR);
